@@ -37,10 +37,10 @@ Le tout en s’appuyant sur les rapports générés par **Lighthouse**, avec val
 
 | Catégorie       | Score 🚀 |
 |------------------|----------|
-| Performance      | 100 🟢    |
-| Accessibilité    | 100 🟢    |
-| SEO              | 100 🟢    |
-| Bonnes pratiques | 100 🟢    |
+| Performance      | 🟢    |
+| Accessibilité    |  🟢    |
+| SEO              |  🟢    |
+| Bonnes pratiques |  🟢    |
 
 *Tests réalisés en local avec Chrome sur la version optimisée du site.*
 
