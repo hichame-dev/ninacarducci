@@ -210,68 +210,54 @@
     <script src="./assets/maugallery.js"></script>
     <script src="./assets/scripts.js"></script>
 </body>
+<!-- 
+Optimisations réalisées sur le site de Nina Carducci
+
+1. Structure & hiérarchie :
+- Balise <title> ajoutée
+- Une seule balise <h1> pertinente
+- Hiérarchie de titres : <h2>, <h3>
+- Suppression des <h6> inutiles, remplacés par <p>
+
+2. Référencement naturel (SEO) :
+- Meta description ajoutée
+- Balises Open Graph et Twitter Card intégrées (hors image)
+- Prévision image OG ultérieure
+
+3. Accessibilité :
+- Libellés "Previous"/"Next" → "Précédent"/"Suivant"
+- Liens clarifiés : "À propos" → "À propos de Nina Carducci"
+- Attributs alt descriptifs sur toutes les images
+- aria-label sur Instagram et boutons carrousel
+- Texte accessible avec visually-hidden
+
+4. Optimisation des images :
+- Conversion WebP : nina.png, yoji-iwa.jpg, galerie, slider...
+- Redimensionnement : galerie (600x600), carrousel (1440x960)
+- Compression qualité 75%
+- Utilisation des balises <picture>
+- Suppression de loading="lazy" sur l’image LCP
+- Préchargement avec <link rel="preload">
+
+5. Carrousel responsive :
+- Media query dédiée (≤ 1000px)
+- Hauteur max à 500px
+- Structure Bootstrap conservée
+- width/height dans <img> pour éviter CLS
+
+6. Nettoyage CSS :
+- Doublons supprimés
+- Breakpoints conservés (1180 / 1000 / 650)
+- Carrousel intégré proprement dans le CSS responsive
+
+7. Performances :
+- Score Lighthouse : 98/100
+- LCP et lazy load optimisés
+- Réduction forte du poids images (ex : nina.png = 2 Mo → 32 Ko)
+-->
 
 </html>
 
 
 
 
-<!-- 
-Optimisations réalisées sur le site de Nina Carducci - Photographe
-
-1. Structure & hiérarchie :
-- Ajout de la balise <title> dans le <head>
-- Ajout d’une seule balise <h1> pertinente en haut de page
-- Restructuration des titres : <h2> pour sections, <h3> pour sous-sections
-- Suppression du <h6> utilisé à tort, remplacé par un <p>
-
-2. Référencement naturel (SEO) :
-- Ajout de la meta description pour améliorer l'affichage dans les moteurs de recherche
-- Intégration des balises Open Graph (sans image)
-- Intégration des balises Twitter Card (sans image)
-- Rappel : ajout d’une image OG possible plus tard
-- meta name="robots" non nécessaire ici mais à connaître
-
-3. Accessibilité & bonnes pratiques :
-- Traduction des textes de navigation du carrousel : "Previous"/"Next" → "Précédent"/"Suivant"
-- Ajout d’aria-label sur le lien Instagram
-- Liens reformulés de manière explicite : 
-• "À propos" → "À propos de Nina Carducci"
-• "Galerie" → "Voir la galerie photo"
-• "Service" → "Découvrir mes services"
-• "Contact" → "Me contacter"
-- Tous les attributs alt ont été ajoutés ou vérifiés sur les images
-- Chargement différé des images avec loading="lazy"
-
-4. Optimisation des images :
-• nina.png → nina.webp
-• camera.png → camera.webp
-• instagram.png → instagram.webp 
-• Toutes les images de la galerie et du slider sont concernées
-
-5. Performance technique :
-- Déplacement des <script> JS du <head> vers le bas du <body> (meilleure performance)
--->
-
-<!-- 6.Ajout des descriptions explicites dans les boutons de navigation (aria-label) :
-
-Les attributs aria-label des boutons ont été modifiés pour fournir des descriptions claires et détaillées sur ce que
-chaque bouton représente (ex. "Slide 1 - Photo d'un paysage en montagne"). Cela aide les utilisateurs de lecteurs
-d'écran à comprendre la fonction de chaque bouton.
-
-7.Ajout de l'attribut alt descriptif pour les images :
-
-Chaque image a maintenant un attribut alt plus détaillé. L'attribut alt est essentiel pour l’accessibilité, car il
-permet aux utilisateurs malvoyants de savoir ce que représente chaque image via un lecteur d'écran.
-
-8.Utilisation de visually-hidden pour les éléments textuels cachés :
-
-Le texte "Précédent" et "Suivant" a été ajouté aux boutons de navigation, mais il est masqué visuellement grâce à la
-classe visually-hidden. Ce texte est uniquement accessible aux technologies d'assistance comme les lecteurs d'écran, ce
-qui permet d'améliorer l'accessibilité sans affecter l'apparence de l'interface.
-
-9.Amélioration des attributs aria-label pour les boutons de navigation :
-
-Les boutons de navigation "Précédent" et "Suivant" ont des aria-label plus descriptifs pour indiquer clairement leur
-fonction. Cela améliore l'accessibilité pour les utilisateurs de clavier et de lecteurs d'écran, en fournissant des
-informations sur l'action de chaque bouton. -->
