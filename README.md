@@ -37,7 +37,7 @@ Le tout en s’appuyant sur les rapports générés par **Lighthouse**, avec val
 
 | Catégorie       | Score 🚀 |
 |------------------|----------|
-| Performance      | 🟢    |
+| Performance      |  🟢    |
 | Accessibilité    |  🟢    |
 | SEO              |  🟢    |
 | Bonnes pratiques |  🟢    |
