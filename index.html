@@ -17,7 +17,7 @@
     <meta property="og:image" content="https://tonsite.com/assets/images/preview.jpg">
 
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -59,7 +59,7 @@
                 <li>
                     <a href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank" rel="noopener"
                         aria-label="Instagram Nina Carducci">
-                        <img src="assets/images/instagram.png" alt="Logo Instagram" width="32" height="32"
+                        <img src="assets/images/instagram.webp" alt="Logo Instagram" width="32" height="32"
                             loading="lazy">
                     </a>
                 </li>
@@ -86,11 +86,11 @@
                             alt="Scène urbaine par Ryoji Iwata" width="1440" height="960">
                     </div>
                     <div class="carousel-item">
-                        <img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg" class="d-block w-100"
+                        <img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100"
                             alt="Concert par Nicholas Green" width="1440" height="960" loading="lazy">
                     </div>
                     <div class="carousel-item">
-                        <img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg" class="d-block w-100"
+                        <img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100"
                             alt="Mariage par Edward Cisneros" width="1440" height="960" loading="lazy">
                     </div>
                 </div>
@@ -111,8 +111,9 @@
         <!-- À PROPOS -->
         <section id="about">
             <div class="picture left">
-                <img src="./assets/images/nina.webp" alt="Portrait de Nina Carducci" width="400" height="400"
-                    loading="lazy">
+            <img src="./assets/images/nina.webp" alt="Portrait de Nina Carducci" loading="lazy">
+ 
+                    
             </div>
             <div id="about-me">
                 <h2>A propos de moi</h2>
@@ -227,53 +228,9 @@
     <!-- Scripts JS en bas -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-    <script src="./assets/maugallery.js"></script>
-    <script src="./assets/scripts.js"></script>
+    <script src="./assets/maugallery.min.js"></script>
+    <script src="./assets/scripts.min.js"></script>
 </body>
-<!-- 
-Optimisations réalisées sur le site de Nina Carducci
 
-1. Structure & hiérarchie :
-- Balise <title> ajoutée
-- Une seule balise <h1> pertinente
-- Hiérarchie de titres : <h2>, <h3>
-- Suppression des <h6> inutiles, remplacés par <p>
-
-2. Référencement naturel (SEO) :
-- Meta description ajoutée
-- Balises Open Graph et Twitter Card intégrées (hors image)
-- Prévision image OG ultérieure
-
-3. Accessibilité :
-- Libellés "Previous"/"Next" → "Précédent"/"Suivant"
-- Liens clarifiés : "À propos" → "À propos de Nina Carducci"
-- Attributs alt descriptifs sur toutes les images
-- aria-label sur Instagram et boutons carrousel
-- Texte accessible avec visually-hidden
-
-4. Optimisation des images :
-- Conversion WebP : nina.png, yoji-iwa.jpg, galerie, slider...
-- Redimensionnement : galerie (600x600), carrousel (1440x960)
-- Compression qualité 75%
-- Utilisation des balises <picture>
-- Suppression de loading="lazy" sur l’image LCP
-- Préchargement avec <link rel="preload">
-
-5. Carrousel responsive :
-- Media query dédiée (≤ 1000px)
-- Hauteur max à 500px
-- Structure Bootstrap conservée
-- width/height dans <img> pour éviter CLS
-
-6. Nettoyage CSS :
-- Doublons supprimés
-- Breakpoints conservés (1180 / 1000 / 650)
-- Carrousel intégré proprement dans le CSS responsive
-
-7. Performances :
-- Score Lighthouse : 98/100
-- LCP et lazy load optimisés
-- Réduction forte du poids images (ex : nina.png = 2 Mo → 32 Ko)
--->
 
 </html>

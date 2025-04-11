@@ -247,6 +247,11 @@ input[type="submit"] {
 		flex: 2;
 	}
 
+	.picture img {
+		max-width: 100%;
+		height: auto;
+	}
+
 	#about,
 	#contact .container {
 		align-items: center;
@@ -285,6 +290,7 @@ input[type="submit"] {
 	.about-me__title {
 		text-align: center;
 		margin-top: 1em;
+		font-size: 1.8rem;
 	}
 
 	#services .container {
@@ -328,10 +334,18 @@ input[type="submit"] {
 		z-index: -1;
 	}
 
-	/* --- Carousel Responsive --- */
 	.carousel-inner img {
 		max-height: 500px;
 		object-fit: cover;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	#about,
+	#contact {
+		padding-inline: 2em;
+		padding-block: 2em;
 	}
 }
 
@@ -366,17 +380,19 @@ input[type="submit"] {
 		max-width: 90%;
 	}
 
-	#about,
-	#contact {
-		padding-inline: 2em;
-		padding-block: 2em;
-	}
-
 	form {
 		width: 100%;
 	}
 
 	.picture {
 		width: 80%;
+	}
+
+	.about-me__title {
+		font-size: 1.5rem;
+	}
+
+	.quote__author {
+		font-size: 1rem;
 	}
 }
