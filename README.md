@@ -62,7 +62,7 @@ Le tout en s’appuyant sur les rapports générés par **Lighthouse**, avec val
 |-----------|-----------------------------------|
 | `main`    | Code en production (version finale stable) |
 | `dev`     | Travaux en cours (optimisations, debug)   |
-| `feature/x` | Fonctionnalités ou fixes spécifiques    |
+
 
 ---
 
@@ -101,8 +101,7 @@ Ce projet est sous licence MIT — libre de l'utiliser, de le modifier et de le 
 ## 4. 🖼️ Optimisation des images
 - Conversion WebP : nina.png, yoji-iwa.jpg, galerie, slider...
 - Redimensionnement : galerie (600x600), carrousel (1440x960)
-- Compression qualité 75–90%
-- Utilisation des balises `<picture>`
+- Compression qualité 75–90%`
 - Suppression de `loading="lazy"` sur l’image LCP
 - Préchargement avec `<link rel="preload">`
 
