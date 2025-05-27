@@ -130,9 +130,10 @@ a {
 	color: #000;
 }
 
+
 .nav-pills .nav-link.active {
 	color: #fff;
-	background: #BEB45A;
+	background: #5a4e1b;
 	border-radius: 0;
 }
 
